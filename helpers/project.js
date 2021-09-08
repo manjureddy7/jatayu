@@ -28,7 +28,7 @@ const initiateSelectedProject = (dirName, projectType) => {
         fs.mkdirSync(`./${projectType}-react`);
     } else {
         fs.mkdirSync(dirName);
-        const source = `${process.cwd()}/feeder/${projectType}`;
+        const source = `../feeder/${projectType}`;
         copyAndMove(source, dirName);
     }
 }
