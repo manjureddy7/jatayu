@@ -10,7 +10,7 @@ const { log, chalk } = require('./log');
 */
 const copyAndMove = (source, destination) => {
     fs.copy(source, destination, err =>{
-        if(err) return log(chalk.red('Unable to generate project'));
+        if(err) return log(chalk.red(`Unable to generate project - ${err}`));
         log(chalk.greenBright(`Project successfully generated. Please navigate to ${destination} and do npm install`));
     });
 }
