@@ -1,0 +1,10 @@
+.wrapper {
+  border: 1px solid;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: cyan;
+  flex-direction: column;
+}

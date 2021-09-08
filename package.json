@@ -1,0 +1,21 @@
+{
+  "name": "jatayu",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate ready-made react projects!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.0.0",
+    "inquirer": "^8.1.2"
+  },
+  "bin": {
+    "jatayu": "bin/jatayu.js"
+  }
+}
