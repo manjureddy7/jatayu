@@ -110,9 +110,31 @@ Will update soon.
   
 ## Screenshots
 
-N/A will update soon!!
+Screenshots of the flow
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://user-images.githubusercontent.com/22653056/132514251-92123992-ca66-4789-a1fe-2d783e57896c.png)
+
+Selecting type of project type
+
+![image](https://user-images.githubusercontent.com/22653056/132514378-3dc7042d-b323-496d-8f70-f3ebfcd79b35.png)
+
+Created folder View
+
+![image](https://user-images.githubusercontent.com/22653056/132514452-4fe0d562-1622-4808-9cc4-41bb426417e5.png)
+
+Expanded project folder view
+
+![image](https://user-images.githubusercontent.com/22653056/132514522-44b0b01c-9a49-4100-a20e-13565a2537ed.png)
+
+
+Screenshots for Component Library flows
+
+![image](https://user-images.githubusercontent.com/22653056/132514826-a77a4d14-af01-42dd-a2fd-7e02a1292692.png)
+
+Expanded project folder view
+
+![image](https://user-images.githubusercontent.com/22653056/132514966-b2d5b68e-3bd4-4544-b7f4-9c6284f4b6d3.png)
+
 
   
 ## License
