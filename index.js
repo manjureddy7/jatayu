@@ -1,3 +1,4 @@
+// const  { intro } = require('./helpers/intro');
 const { getProjectDetails } = require('./helpers/app');
 const { log, chalk } = require('./helpers/log');
 const { initiateSelectedProject } = require('./helpers/project');
@@ -16,3 +17,18 @@ const getProjectDetailsFromTheUser = async () => {
     initiateSelectedProject(dirName, projectType);
 }
 getProjectDetailsFromTheUser();
+
+/**
+    * Introduction to the package
+*/
+// intro();
+
+// const readUsrFile = () => {
+
+// }
+
+
+module.exports = {
+    getProjectDetailsFromTheUser
+}
+
