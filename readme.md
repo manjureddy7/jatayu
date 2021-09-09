@@ -111,11 +111,19 @@ Will update soon.
 
 Screenshots of the flow
 
+![image](https://user-images.githubusercontent.com/22653056/132643582-5bfad397-d9db-4680-80f7-1e23446f8e34.png)
+
+
 ![image](https://user-images.githubusercontent.com/22653056/132514251-92123992-ca66-4789-a1fe-2d783e57896c.png)
 
 Selecting type of project type
 
 ![image](https://user-images.githubusercontent.com/22653056/132514378-3dc7042d-b323-496d-8f70-f3ebfcd79b35.png)
+
+Successful project creation
+
+![image](https://user-images.githubusercontent.com/22653056/132643701-d835b1fc-e7a6-4fbf-a31d-eac00d8cecd5.png)
+
 
 Created folder View
 
