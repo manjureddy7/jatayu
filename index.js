@@ -1,4 +1,4 @@
-const  { intro } = require('./helpers/intro');
+// const  { intro } = require('./helpers/intro');
 const { getProjectDetails } = require('./helpers/app');
 const { log, chalk } = require('./helpers/log');
 const { initiateSelectedProject } = require('./helpers/project');
@@ -28,6 +28,6 @@ getProjectDetailsFromTheUser();
 // }
 
 
-module.exports = {
-    getProjectDetailsFromTheUser
-}
+// module.exports = {
+//     getProjectDetailsFromTheUser
+// }
