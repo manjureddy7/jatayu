@@ -1,4 +1,5 @@
-![Logo](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/28c626b0-fa3b-4f3c-9023-32cce0c4df6d/d9hu0go-ecb1aeeb-a9c4-4907-9270-7c8df2b9f78a.jpg/v1/fill/w_1024,h_650,q_75,strp/jatayu_by_elcaide_d9hu0go-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjUwIiwicGF0aCI6IlwvZlwvMjhjNjI2YjAtZmEzYi00ZjNjLTkwMjMtMzJjY2UwYzRkZjZkXC9kOWh1MGdvLWVjYjFhZWViLWE5YzQtNDkwNy05MjcwLTdjOGRmMmI5Zjc4YS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ycEU5tS1rQuQH8FzGSXMtzFpmWVqNm-LjD_zj7BfZJU)
+![Logo](https://user-images.githubusercontent.com/22653056/132663120-55dafaf4-195d-42d9-8d4b-ed9a148fd0f9.png)
+
 
     
 # JATAYU 🦅	
