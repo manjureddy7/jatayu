@@ -10,7 +10,7 @@ const { log, chalk } = require('./log');
  * @param {string} destination 
 */
 const copyAndMove = (source, destination) => {
-    console.log('tests---', path.combine(__dirname, ''));
+    // console.log('tests---', path.combine(__dirname, ''));
     fs.copy(source, destination, err =>{
         if(err) return log(chalk.red(`Unable to generate project - ${err}`));
         log(chalk.greenBright(`Project successfully generated. Please navigate to ${destination} and do npm install`));
@@ -23,6 +23,7 @@ const copyAndMove = (source, destination) => {
  * @param {*} projectType User selected project type *oneOf WATS,WAJS,CLJS,CLTS
  */
 const initiateSelectedProject = (newDirName, projectType) => {
+    console.log('initiate sleetced prohect--',  path.dirname(require.main.filename))
     const rootPath = process.cwd();
     const requestedDir = `${rootPath}/${newDirName}`;
     if(fs.existsSync(requestedDir)) {

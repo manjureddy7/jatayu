@@ -2,7 +2,7 @@
 const { getProjectDetails } = require('./helpers/app');
 const { log, chalk } = require('./helpers/log');
 const { initiateSelectedProject } = require('./helpers/project');
-
+const path = require('path');
 /**
     * Get dirName & projectType from the user
 */
@@ -26,6 +26,9 @@ getProjectDetailsFromTheUser();
 
 // }
 
+// console.log('filename', require.main.filename)
+// console.log('path', path.dirname(require.main.filename))
+// console.log('path combine', path.join(__dirname, 'yoo'))
 
 module.exports = {
     getProjectDetailsFromTheUser
