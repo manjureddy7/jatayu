@@ -2,7 +2,6 @@
 const { getProjectDetails } = require('./helpers/app');
 const { log, chalk } = require('./helpers/log');
 const { initiateSelectedProject } = require('./helpers/project');
-const fs = require('fs-extra');
 
 /**
     * Get dirName & projectType from the user
@@ -16,7 +15,7 @@ const getProjectDetailsFromTheUser = async () => {
     `)
     initiateSelectedProject(dirName, projectType);
 }
-// getProjectDetailsFromTheUser();
+getProjectDetailsFromTheUser();
 
 /**
     * Introduction to the package
