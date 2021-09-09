@@ -31,7 +31,9 @@ const initiateSelectedProject = (newDirName, projectType) => {
     if(fs.existsSync(requestedDir)) {
         log(chalk.yellow.bgBlack.bold(`A directory with name ${newDirName} already exists, creating a new folder now, you can rename as you wish and proceede!`));
         const temp = uuidv4();
-        fs.mkdirSync(`./${projectType}-react-${temp}`);
+        const newTempDir = `./${projectType}-react-${temp}`;
+        fs.mkdirSync(newTempDir);
+        copyAndMove(source, newTempDir);
     } else {
         fs.mkdirSync(newDirName);
         const source = `${path.dirname(require.main.filename)}/feeder/${projectType}`;
