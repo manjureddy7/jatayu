@@ -28,6 +28,7 @@ const copyAndMove = (source, destination) => {
 const initiateSelectedProject = (newDirName, projectType) => {
     const rootPath = process.cwd();
     const requestedDir = `${rootPath}/${newDirName}`;
+    const source = `${path.dirname(require.main.filename)}/feeder/${projectType}`;
     if(fs.existsSync(requestedDir)) {
         log(chalk.yellow.bgBlack.bold(`A directory with name ${newDirName} already exists, creating a new folder now, you can rename as you wish and proceede!`));
         const temp = uuidv4();
@@ -36,7 +37,6 @@ const initiateSelectedProject = (newDirName, projectType) => {
         copyAndMove(source, newTempDir);
     } else {
         fs.mkdirSync(newDirName);
-        const source = `${path.dirname(require.main.filename)}/feeder/${projectType}`;
         copyAndMove(source, newDirName);
     }
 }
