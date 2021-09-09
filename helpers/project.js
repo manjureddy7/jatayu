@@ -4,7 +4,6 @@ const { v4: uuidv4 } = require('uuid');
 
 const { log, chalk } = require('./log');
 
-
 /**
  * Copy the corresponding project type from feeder and publish to the user directory
  * @param {string} source 
@@ -12,8 +11,12 @@ const { log, chalk } = require('./log');
 */
 const copyAndMove = (source, destination) => {
     fs.copy(source, destination, err =>{
-        if(err) return log(chalk.red(`Unable to generate project - ${err}`));
-        log(chalk.greenBright(`Project successfully generated. Please navigate to ${destination} and do npm install`));
+        if(err) {
+            log(chalk.redBright.bgYellow.bold(`Unable to generate the project, please find the error below`));
+            log(chalk.red(`${err}`));
+            return;
+        }
+        log(chalk.greenBright.bgBlack.bold(`Project successfully generated. Please navigate to ${destination} and do npm install`));
     });
 }
 
@@ -26,13 +29,12 @@ const initiateSelectedProject = (newDirName, projectType) => {
     const rootPath = process.cwd();
     const requestedDir = `${rootPath}/${newDirName}`;
     if(fs.existsSync(requestedDir)) {
-        log(chalk.red(`${newDirName} already exists in rootPath, generating a temp one for the time being`));
+        log(chalk.yellow.bgBlack.bold(`A directory with name ${newDirName} already exists, creating a new folder now, you can rename as you wish and proceede!`));
         const temp = uuidv4();
         fs.mkdirSync(`./${projectType}-react-${temp}`);
     } else {
         fs.mkdirSync(newDirName);
         const source = `${path.dirname(require.main.filename)}/feeder/${projectType}`;
-        console.log(`Source: ${source} and destination is ${newDirName}`)
         copyAndMove(source, newDirName);
     }
 }
