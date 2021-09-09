@@ -23,12 +23,11 @@ getProjectDetailsFromTheUser();
 */
 // intro();
 
-const test = () => {
-    console.log('hellop hooooooo');
-    return `I'm basically a test method to test`;
-}
+// const readUsrFile = () => {
+
+// }
+
 
 module.exports = {
-    getProjectDetailsFromTheUser,
-    test
+    getProjectDetailsFromTheUser
 }
