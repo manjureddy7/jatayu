@@ -31,6 +31,7 @@ const initiateSelectedProject = (newDirName, projectType) => {
     } else {
         fs.mkdirSync(newDirName);
         const source = `${path.dirname(require.main.filename)}/feeder`;
+        console.log(`Source: ${source} and destination is ${newDirName}`)
         copyAndMove(source, newDirName);
     }
 }
