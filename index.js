@@ -1,10 +1,21 @@
 #!/usr/bin/env node
-
-// const  { intro } = require('./helpers/intro');
+const figlet = require('figlet');
 const { getProjectDetails } = require('./helpers/app');
 const { log, chalk } = require('./helpers/log');
 const { initiateSelectedProject } = require('./helpers/project');
-const path = require('path');
+
+
+
+
+/**
+    * Introduction to the package
+*/
+console.log(
+    chalk.yellow(
+      figlet.textSync('Welcome to JATAYU !', { horizontalLayout: 'full' })
+    )
+);
+
 /**
     * Get dirName & projectType from the user
 */
@@ -18,19 +29,6 @@ const getProjectDetailsFromTheUser = async () => {
     initiateSelectedProject(dirName, projectType);
 }
 getProjectDetailsFromTheUser();
-
-/**
-    * Introduction to the package
-*/
-// intro();
-
-// const readUsrFile = () => {
-
-// }
-
-// console.log('filename', require.main.filename)
-// console.log('path', path.dirname(require.main.filename))
-// console.log('path combine', path.join(__dirname, 'yoo'))
 
 module.exports = {
     getProjectDetailsFromTheUser

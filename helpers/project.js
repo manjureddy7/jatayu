@@ -1,5 +1,6 @@
 const fs = require('fs-extra');
 const path = require('path');
+const { v4: uuidv4 } = require('uuid');
 
 const { log, chalk } = require('./log');
 
@@ -25,8 +26,9 @@ const initiateSelectedProject = (newDirName, projectType) => {
     const rootPath = process.cwd();
     const requestedDir = `${rootPath}/${newDirName}`;
     if(fs.existsSync(requestedDir)) {
-        log(chalk.red(`${newDirName} already exists in rootPath, generating a temp one for the time being`))
-        fs.mkdirSync(`./${projectType}-react`);
+        log(chalk.red(`${newDirName} already exists in rootPath, generating a temp one for the time being`));
+        const temp = uuidv4();
+        fs.mkdirSync(`./${projectType}-react-${temp}`);
     } else {
         fs.mkdirSync(newDirName);
         const source = `${path.dirname(require.main.filename)}/feeder/${projectType}`;
