@@ -58,7 +58,7 @@ npm install -g jatayu
   
 ## Usage ⚠️	✅
 
-Create an empty directory and type `jatayu` in the terminal of the newly created folder. Voila! you will be prompted to answer two basic questions go ahead and answer them !
+After installation, create an empty directory anywhere you want and type `jatayu` in the terminal of the newly created folder. Voila! you will be prompted to answer two basic questions go ahead and answer them !
 
 ```
   1. Please enter your Directory name where your future project will reside
@@ -71,7 +71,7 @@ Create an empty directory and type `jatayu` in the terminal of the newly created
       clts 
 ```
 
-Enter the directory name where you want to `setup` react app and select the type of project you want.
+Enter the directory name where you want to `setup` react app and select the `type of project` you want.
 
 ### Steps after installing the project 	📌
 
