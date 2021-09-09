@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // const  { intro } = require('./helpers/intro');
 const { getProjectDetails } = require('./helpers/app');
 const { log, chalk } = require('./helpers/log');
