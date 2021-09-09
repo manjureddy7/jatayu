@@ -22,7 +22,6 @@ const copyAndMove = (source, destination) => {
  * @param {*} projectType User selected project type *oneOf WATS,WAJS,CLJS,CLTS
  */
 const initiateSelectedProject = (newDirName, projectType) => {
-    console.log('initiate sleetced prohect--',  )
     const rootPath = process.cwd();
     const requestedDir = `${rootPath}/${newDirName}`;
     if(fs.existsSync(requestedDir)) {
@@ -30,7 +29,7 @@ const initiateSelectedProject = (newDirName, projectType) => {
         fs.mkdirSync(`./${projectType}-react`);
     } else {
         fs.mkdirSync(newDirName);
-        const source = `${path.dirname(require.main.filename)}/feeder`;
+        const source = `${path.dirname(require.main.filename)}/feeder/${projectType}`;
         console.log(`Source: ${source} and destination is ${newDirName}`)
         copyAndMove(source, newDirName);
     }
