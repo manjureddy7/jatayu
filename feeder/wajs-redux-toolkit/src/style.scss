@@ -1,0 +1,38 @@
+$body-color: wheat;
+
+.container {
+  color: $body-color;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+nav {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    font-size: 30px;
+    background-color: cornsilk;
+    padding: 15px;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: floralwhite;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 20px;
+  li {
+    list-style-type: disclosure-closed;
+    margin-bottom: 1rem;
+  }
+}
