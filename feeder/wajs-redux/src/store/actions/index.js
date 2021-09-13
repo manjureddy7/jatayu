@@ -11,3 +11,11 @@ export function getUsers() {
 export function addUser(user) {
     return { type: actionTypes.ADD_USER, payload: user };
 }
+
+export function addTempUser(user) {
+    return { type: actionTypes.TEMP_USER, payload: user };
+}
+
+export function asyncPosts(posts) {
+    return { type: actionTypes.ASYNC_POSTS, payload: posts };
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addUser } from '../store/actions';
-
+import { addTempUser } from '../store/actions';
+import getAsyncPosts from '../store/thunks/getPosts';
 /**
  * Using useDispatch & useSelector in this component instead of the default connect function
  */
@@ -9,10 +9,10 @@ import { addUser } from '../store/actions';
 const Users = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.users.users);
-  const [user, setUser] = useState('User_3');
+  const [user, setUser] = useState('user_3');
   const addDummyUser = () => {
     if (!user) return;
-   dispatch(addUser(user));
+   dispatch(addTempUser(user));
    setUser('');
   };
   return (
@@ -21,6 +21,7 @@ const Users = () => {
       {users.map((dUser) => (<li key={dUser}>{dUser}</li>))}
       <input type="text" placeholder="add user" value={user} onChange={(e) => setUser(e.target.value)} />
       <button style={{ marginTop: '10px' }} type="button" onClick={addDummyUser}>Add User</button>
+      <button type="button" onClick={() => dispatch(getAsyncPosts())}>Get Async Posts - check redux devtool</button>
     </div>
   );
 };

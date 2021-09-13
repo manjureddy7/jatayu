@@ -5,6 +5,7 @@ const initialState = {
         'User-1',
         'User-2',
     ],
+    posts: [],
 };
 
 function usersReducer(state = initialState, action) {
@@ -12,10 +13,14 @@ function usersReducer(state = initialState, action) {
         case actionTypes.GET_USERS:
             return state.users;
         case actionTypes.ADD_USER:
-            console.log('payload in user', action.payload);
             return {
                 ...state,
                 users: [...state.users, action.payload],
+            };
+        case actionTypes.ASYNC_POSTS:
+            return {
+                ...state,
+                posts: [...state.posts, action.payload],
             };
         default:
             return state;

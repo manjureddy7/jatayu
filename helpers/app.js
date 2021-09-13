@@ -1,6 +1,19 @@
 //** This will prompt the user to provide the directory name and type of project he needs */
 const inquirer = require('inquirer');
 
+const projectTypes = [
+  'React Component Library',
+  'React Web App',
+  'React webapp with basic Redux',
+  'React webapp with advanced Redux',
+  'React webapp with Redux toolkit',
+  'React webapp with context as state management'
+];
+
+const projectSupport = [
+  'Javascript(JS)',
+  'Typescript(TS)'
+]
 const questions = [
     {
       name: 'dirName',
@@ -15,10 +28,16 @@ const questions = [
       }
     },
     {
-        type: 'list',
-        name: 'projectType',
-        message: 'Select project type',
-        choices: [ 'wajs', 'wats', 'cljs', 'clts' ],
+      type: 'list',
+      name: 'projectType',
+      message: 'Please select project type',
+      choices: projectTypes,
+    },
+    {
+      type: 'list',
+      name: 'projectSupport',
+      message: 'Please select project support ',
+      choices: projectSupport,
     }
 ];
 

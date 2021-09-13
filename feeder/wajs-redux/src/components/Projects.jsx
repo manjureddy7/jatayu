@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import getAsyncPosts from '../store/thunks/getPosts';
 
 const Projects = ({ projects }) => (
   <div className="content">
@@ -9,6 +10,7 @@ const Projects = ({ projects }) => (
         <li key={project}>{project}</li>
       ))}
     </ul>
+    {/* <button type="button" onClick={() => getPosts()}>Get Posts</button> */}
   </div>
 );
 
@@ -20,10 +22,10 @@ const mapStateToProps = (state) => (
  * Dispatch for the function component
 */
 
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     addProject: project => dispatch(addProject(project))
-//   };
-// }
+function mapDispatchToProps(dispatch) {
+  return {
+    getPosts: () => dispatch(getAsyncPosts()),
+  };
+}
 
-export default connect(mapStateToProps)(Projects);
+export default connect(mapStateToProps, mapDispatchToProps)(Projects);

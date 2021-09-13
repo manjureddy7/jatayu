@@ -13,13 +13,18 @@ const initialState = {
         'Redux Toolkit React web-app with JS!',
         'Redux Toolkit React web-app with TS!',
     ],
+    posts: [],
 };
 
 function projectsReducer(state = initialState, action) {
     switch (action.type) {
         case actionTypes.GET_PROJECTS:
             return state.projects;
-
+            case actionTypes.ASYNC_POSTS:
+                return {
+                    ...state,
+                    posts: [...state.posts, action.payload],
+                };
         default:
             return state;
     }

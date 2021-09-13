@@ -18,10 +18,11 @@ console.log(
 */
 const getProjectDetailsFromTheUser = async () => {
     const details = await getProjectDetails();
-    const { dirName, projectType } = details;
+    const { dirName, projectType, projectSupport } = details;
     log(chalk.greenBright.bgBlack.bold(`Directory created: ${dirName}`));
     log(chalk.greenBright.bgBlack.bold(`Selected Project type: ${projectType}`));
-    initiateSelectedProject(dirName, projectType);
+    log(chalk.greenBright.bgBlack.bold(`Selected Project support: ${projectSupport}`));
+    initiateSelectedProject(dirName, projectType, projectSupport);
 }
 
 getProjectDetailsFromTheUser();
