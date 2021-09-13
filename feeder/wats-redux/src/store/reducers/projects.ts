@@ -1,6 +1,6 @@
 import * as actionTypes from '../action-types';
 
-const initialState = {
+const initialProjectState = {
     projects: [
         'React web-app with JS & TS supports',
         'React component-library with JS & TS supports',
@@ -12,7 +12,11 @@ const initialState = {
     posts: [],
 };
 
-function projectsReducer(state = initialState, action) {
+type ACTIONTYPE =
+  | { type: "GET_PROJECTS" }
+  | { type: "ASYNC_POSTS"; payload: any };
+
+function projectsReducer(state = initialProjectState, action: ACTIONTYPE) {
     switch (action.type) {
         case actionTypes.GET_PROJECTS:
             return state.projects;
