@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 
 const Home = () => (
   <div className="content">
-    <h3>This is a React webapp JS template with Context api as State Management</h3>
+    <h3>This is a React webapp TS template with Context api as State Management</h3>
     <span>
       Please go through all the folder files to understand better!
     </span>

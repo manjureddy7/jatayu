@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 // eslint-disable-next-line
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
@@ -14,7 +14,7 @@ const App = () => (
     <div className="logo">
       <img className="jatayu-logo" src={IMAGE_URL} alt="JATAYU logo" height="300px" width="500px" />
       <h1 className="container">
-        Welcome to JATAYU generated React Web app JS template with Context as state Management!
+        Welcome to JATAYU generated React Web app TS template with Context as state Management!
       </h1>
     </div>
     <Router>
