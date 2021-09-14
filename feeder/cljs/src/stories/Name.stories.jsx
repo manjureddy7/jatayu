@@ -11,8 +11,8 @@ const Template = (args) => <Name {...args} />;
 export const Primary = Template.bind({});
 
 Primary.args = {
-   name: "MJKR",
-   company: "Everywhere",
+   name: "Jatayu",
+   company: "npm",
    experience: 4
 };
 export const Secondary = Template.bind({});

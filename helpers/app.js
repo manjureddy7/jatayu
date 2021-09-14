@@ -4,10 +4,9 @@ const inquirer = require('inquirer');
 const projectTypes = [
   'React Component Library',
   'React Web App',
-  'React webapp with basic Redux',
-  'React webapp with advanced Redux',
-  'React webapp with Redux toolkit',
-  'React webapp with context as state management'
+  'React Web App with Redux',
+  'React Web App with Redux Toolkit',
+  'React Web App with Context'
 ];
 
 const projectSupport = [
@@ -18,7 +17,7 @@ const questions = [
     {
       name: 'dirName',
       type: 'input',
-      message: 'Please enter your Directory name where your future project will reside',
+      message: 'Please enter directory name where your react template will reside',
       validate: function( value ) {
         if (value.length) {
           return true;

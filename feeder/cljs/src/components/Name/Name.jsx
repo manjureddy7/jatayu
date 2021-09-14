@@ -12,7 +12,7 @@ const Name = ({ name = 'MR', company = '7', experience }) => {
             <p>I work at {company} </p>
             {
                 experience && 
-                <p>I have total {experience} years of experience.</p>
+                <p>I'm with {experience} yoe.</p>
             }
         </Container>
     )
