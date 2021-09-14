@@ -9,7 +9,7 @@ Jatayu is a command line interface (CLI) tool which helps to generate production
 
 Did you ever tried setting up your own `react` environment without `create-react-app` ? Then you know the pain behind it. Adding testing support or webpack or typescript will just increases that pain. 😪	
 
-`JATAYU` is that pain killer 💊. If you want to have custom setup for your react web app or component library without the need of CRA or it's alternatives, `JATAYU` to the rescue. 🥳	
+`JATAYU` is that pain killer 💊. If you want to have custom template setup for your react web app or component library without the need of CRA or it's alternatives, `JATAYU` to the rescue. 🥳	
 
 We provide you the skeleton template structure and sky is the limit for it's tuning.
 
@@ -25,25 +25,15 @@ At its very core `JATAYU` offers below described templates with both Typescript 
 
 When you choose any one of the above projects, we provide you the ready-made template structure.
 
-So what do we mean by that? 🕶️
+## Features
 
-You will get below items in the generated templates for WebApp react projects
-
-- `config` folder with all the `webpack` supplements (dev & prod) 🌱	
-- `public` folder with root index.html 🌴
-- `src` folder with some inbuilt react components with `routing` 🌲	
-- inbuilt `scss`, `react-testing-library` 🍁	
-- some default `lint` rules 🌵	
-
-For Component Library projects you will get below items out of the box
-
-- A custom `webpack` setup 🌱
-- Custom testing setup with `react-testing-library` 🌲
-- Isolated components testing with `storybook` 🍃
-
-```
-You can always override the default items provided, you can tune them , refine them into your needs. 🧰
-```
+| Template Type/Support            | Webpack | Testing (@testing-library) | Storybook | Typescript | State Management | Lint | Build |
+|----------------------------------|---------|----------------------------|-----------|------------|------------------|------|-------|
+| React Component Library          | ✅     | ✅                        | ✅       | ✅        | No               | ✅  | ✅   |
+| React Web App                    | ✅     | ✅                        | No        | ✅        | ✅              | ✅  | ✅   |
+| React Web App with Redux         | ✅     | ✅                        | No        | ✅        | ✅              | ✅  | ✅   |
+| React Web App with Redux Toolkit | ✅     | ✅                        | No        | ✅        | ✅              | ✅  | ✅   |
+| React Web App with Context API   | ✅     | ✅                        | No        | ✅        | ✅              | ✅  | ✅   |
 
 
 ## Installation 🔨	
