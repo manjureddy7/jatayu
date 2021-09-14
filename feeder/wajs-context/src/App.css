@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
+
+.jatayu-logo {
+  border-radius: 50%;
+  height: 200px;
+  width: 300px;
+}
