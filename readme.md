@@ -1,10 +1,9 @@
 ![Logo](https://user-images.githubusercontent.com/22653056/132664833-3cf4c46c-9e41-4600-b355-53fbeedec05b.png)
 
 
-    
 # JATAYU 🦅	
 
-Jatayu is a command line interface (CLI) tool which helps to generate READY-MADE React projects for the App (web-app) or Library (common components) development. 🚀	
+Jatayu is a command line interface (CLI) tool which helps to generate production ready hand-made React projects for the App (web-app) or Library (components) development. 🚀	
 
 ## What is the purpose of JATAYU ? 💁
 
@@ -12,22 +11,23 @@ Did you ever tried setting up your own `react` environment without `create-react
 
 `JATAYU` is that pain killer 💊. If you want to have custom setup for your react web app or component library without the need of CRA or it's alternatives, `JATAYU` to the rescue. 🥳	
 
-We provide you the skeleton structure and sky is the limit for it's tuning.
+We provide you the skeleton template structure and sky is the limit for it's tuning.
 
-At its very core `JATAYU` offers four kind of `ready-made` react projects for the end users.
+At its very core `JATAYU` offers below described templates with both Typescript & Javascript support.
 
 ```
-  1.WAJS - Web App with JavaScript support
-  2.WATS - Web App with Typescript support
-  3.CLJS - Component Library with JavaScript support
-  4.CLTS - Component Library with Typescript support
+  1.React Component Library,
+  2.React Web App,
+  3.React Web App with Redux,
+  4.React Web App with Redux Toolkit,
+  5.React Web App with Context
 ```
 
-When you choose any one of the above projects, we provide you the ready-made skeleton structure.
+When you choose any one of the above projects, we provide you the ready-made template structure.
 
 So what do we mean by that? 🕶️
 
-You will get below items in your ready-made projects for WebApp react projects
+You will get below items in the generated templates for WebApp react projects
 
 - `config` folder with all the `webpack` supplements (dev & prod) 🌱	
 - `public` folder with root index.html 🌴
@@ -46,7 +46,6 @@ You can always override the default items provided, you can tune them , refine t
 ```
 
 
-
 ## Installation 🔨	
 
 Use the package manager [npm](https://www.npmjs.com/) to install jatayu globally.
@@ -62,14 +61,20 @@ npm install -g jatayu
 After installation, create an empty directory anywhere you want and type `jatayu` in the terminal of the newly created folder. Voila! you will be prompted to answer two basic questions go ahead and answer them !
 
 ```
-  1. Please enter your Directory name where your future project will reside
+  1. Please enter directory name where your react template will reside
 
-  2. Select project type (Use arrow keys)
+  2. Please select template type  (Use arrow keys)
 
-      wajs 
-      wats 
-      cljs 
-      clts 
+    React Component Library  
+    React Web App  
+    React Web App with Redux 
+    React Web App with Redux Toolkit
+    React Web App with Context  
+
+  3. Please select template support 
+
+     Javascript(JS)
+     Typescript(TS) 
 ```
 
 Enter the directory name where you want to `setup` react app and select the `type of project` you want.
@@ -112,36 +117,25 @@ Will update soon.
 
 Screenshots of the flow
 
-![image](https://user-images.githubusercontent.com/22653056/132643582-5bfad397-d9db-4680-80f7-1e23446f8e34.png)
+![image](https://user-images.githubusercontent.com/22653056/133246794-51cca84e-4798-48ca-990b-93d474892ad1.png)
+
+Enter directory name
+
+![image](https://user-images.githubusercontent.com/22653056/133246843-aca54d67-a711-4efe-9750-1cff05aa60ea.png)
 
 
-![image](https://user-images.githubusercontent.com/22653056/132514251-92123992-ca66-4789-a1fe-2d783e57896c.png)
+Select template type
 
-Selecting type of project type
+![image](https://user-images.githubusercontent.com/22653056/133246938-0ddbc77f-0abd-4876-9d37-22a333498c96.png)
 
-![image](https://user-images.githubusercontent.com/22653056/132514378-3dc7042d-b323-496d-8f70-f3ebfcd79b35.png)
+Selecr template support type
+
+![image](https://user-images.githubusercontent.com/22653056/133247049-8fe90137-f46d-4180-adbd-6e46e9175fe8.png)
 
 Successful project creation
 
-![image](https://user-images.githubusercontent.com/22653056/132643701-d835b1fc-e7a6-4fbf-a31d-eac00d8cecd5.png)
+![image](https://user-images.githubusercontent.com/22653056/133247140-f6949057-eec2-498d-a50e-a41d36d84329.png)
 
-
-Created folder View
-
-![image](https://user-images.githubusercontent.com/22653056/132514452-4fe0d562-1622-4808-9cc4-41bb426417e5.png)
-
-Expanded project folder view
-
-![image](https://user-images.githubusercontent.com/22653056/132514522-44b0b01c-9a49-4100-a20e-13565a2537ed.png)
-
-
-Screenshots for Component Library flows
-
-![image](https://user-images.githubusercontent.com/22653056/132514826-a77a4d14-af01-42dd-a2fd-7e02a1292692.png)
-
-Expanded project folder view
-
-![image](https://user-images.githubusercontent.com/22653056/132514966-b2d5b68e-3bd4-4544-b7f4-9c6284f4b6d3.png)
 
 
   
