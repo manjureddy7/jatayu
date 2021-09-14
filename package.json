@@ -1,6 +1,6 @@
 {
   "name": "jatayu",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A CLI tool to generate production ready hand-made React Apps",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,12 @@
   },
   "bin": {
     "jatayu": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manjureddy7/jatayu"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
