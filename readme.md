@@ -16,10 +16,10 @@ We provide you the skeleton template structure and sky is the limit for it's tun
 At its very core `JATAYU` offers below described templates with both Typescript & Javascript support.
 
 ```
-  1.React Component Library,
-  2.React Web App,
-  3.React Web App with Redux,
-  4.React Web App with Redux Toolkit,
+  1.React Component Library
+  2.React Web App
+  3.React Web App with Redux
+  4.React Web App with Redux Toolkit
   5.React Web App with Context
 ```
 
