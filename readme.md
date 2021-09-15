@@ -80,7 +80,11 @@ cd `your-newly-created-folder`
 
 npm install
 
-run -> npm run start (if you have chosen webapp template) or npm run storybook (if it is library template)
+run -> npm run start (if you have chosen webapp template)
+
+       or
+
+       npm run storybook (if it is library template)
 ```
 
 
