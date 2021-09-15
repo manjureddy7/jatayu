@@ -8,7 +8,7 @@ import { Users, About, Home } from './components';
 const App = () => (
   <div className="wrapper">
     <h1 className="container">
-      Hello! Welcome to React Web App with JS setup (WAJS)!
+      Hello! Welcome to React Web App with JS setup!
     </h1>
     <Router>
       <div>

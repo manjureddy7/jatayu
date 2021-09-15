@@ -2,8 +2,9 @@ const fs = require('fs-extra');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const boxen = require('boxen');
-
 const { log, chalk } = require('./log');
+
+
 
 const PROJECTS_FEEDER = [
     {
@@ -56,7 +57,7 @@ const PROJECTS_FEEDER = [
         projectSupport: 'Typescript(TS)',
         feederName: 'wats-context'
     }
-]
+];
 
 /**
  * Copy the corresponding project type from feeder and publish to the user directory
@@ -77,7 +78,10 @@ const copyAndMove = (source, destination) => {
         const m4 = chalk.greenBright.bold(`run npm install`);
         const m5 = chalk.greenBright.bold(`run npm outdated`);
         const m6 = chalk.greenBright.bold(`run npm update`);
-        const display = `${m1}\n \n ${m2}\n \n ${m3}\n\n ${m4}\n\n ${m5}\n\n ${m6}\n\n`
+        const m7 = chalk.yellowBright.bold(`If you have chosen a web app template, start it by "npm run start" command`);
+        const m8 = chalk.blueBright.bold(`If it is a library template,then do "npm run storybook" command`);
+        const m9 = chalk.greenBright.bold(`Have fun!`);
+        const display = `${m1}\n \n ${m2}\n \n ${m3}\n\n ${m4}\n\n ${m5}\n\n ${m6}\n\n ${m7}\n\n ${m8}\n\n ${m9}\n\n`;
         const boxenOptions = {
             padding: 1,
             margin: 1,
@@ -138,3 +142,51 @@ const initiateSelectedProject = (newDirName, projectType, projectSupport) => {
 module.exports = {
     initiateSelectedProject
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * ------------------------- Install packages ------------------------
+ */
+
+// const exec = require('child_process').exec;
+// const Spinner = require('cli-spinner').Spinner;
+/**
+ * Install dependencies
+*/
+// const getPackageDeatils = async () => {
+//     const projectReader = `${path.dirname(require.main.filename)}/helpers/package-reader.json`
+//     const packages = await fs.readFile(projectReader);
+//     return JSON.parse(packages);
+// }
+
+// const installPackages = (projectType, projectSupport) => {
+//     getPackageDeatils().then((data) => {
+//         const project = data[`${projectType}/${projectSupport}`];
+//         if(project.devDeps) {
+//             console.log("Dev dependenxcies")
+//             const packages = project.devDeps.join(" ");
+//             const installDevDeps = `npm install --save-dev ${packages}`;
+//             const spinner = new Spinner(chalk.greenBright.bold(`Installing dev dependencies!`));
+//             spinner.setSpinnerString('▖▘▝▗')
+//             spinner.start();
+//             exec(installDevDeps, (error) => {
+//                 if(!error) {
+//                     spinner.setSpinnerString('')
+//                     spinner.stop(false);
+//                     log(chalk.greenBright.bold(`\nDev dependencies successfully installed!!!`))
+//                 };
+//             })
+//         }
+//     }).catch(e => console.log('e', e))
+// }

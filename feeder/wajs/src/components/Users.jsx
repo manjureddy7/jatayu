@@ -2,7 +2,7 @@ import React from 'react';
 
 const Users = () => (
   <div>
-    <h3>I`m users page!</h3>
+    <h3>I`m Users page!</h3>
   </div>
 );
 

@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 
 const About = () => (
   <div>
-    <h3>I`m about page!</h3>
+    <h3>I`m About page!</h3>
   </div>
 );
 

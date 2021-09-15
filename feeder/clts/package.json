@@ -1,7 +1,7 @@
 {
-  "name": "my-component-library",
+  "name": "reusable-component-library",
   "version": "1.0.0",
-  "description": "My reusbale Components",
+  "description": "Reusbale Component Library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",

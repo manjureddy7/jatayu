@@ -1,10 +1,10 @@
 {
-  "name": "test-webpack",
+  "name": "react-redux-toolkit-ts-setup",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack/webpack.dev",
+    "start": "webpack-dev-server --config config/webpack/webpack.dev --open --port 5205",
     "build": "webpack --config config/webpack/webpack.prod",
     "test": "jest --watchAll"
   },
