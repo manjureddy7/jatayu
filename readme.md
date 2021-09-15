@@ -128,7 +128,8 @@ Selecr template support type
 
 Successful project creation
 
-![image](https://user-images.githubusercontent.com/22653056/133247140-f6949057-eec2-498d-a50e-a41d36d84329.png)
+![image](https://user-images.githubusercontent.com/22653056/133447935-46b3e6ac-41b1-4f18-85f3-3f61031e9de4.png)
+
 
 
 
