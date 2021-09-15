@@ -73,14 +73,14 @@ Enter the directory name where you want to `setup` react app and select the `typ
 
 Now `cd` to the newly created folder by `jatayu` and do npm install. It's good to update your newly created `node_modules` by `npm outdated` you will get list of outdated `node_modules`, update them by `npm update`.
 
+Start the template by `npm run start` (if you have chosen webapp template) or `npm run storybook` (if it is library template)
+
 ```bash
 cd `your-newly-created-folder`
 
 npm install
 
-npm outdated
-
-npm update
+run -> npm run start (if you have chosen webapp template) or npm run storybook (if it is library template)
 ```
 
 

@@ -1,6 +1,6 @@
 {
   "name": "jatayu",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A CLI tool to generate production ready hand-made React Apps",
   "main": "index.js",
   "scripts": {
