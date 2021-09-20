@@ -27,14 +27,13 @@ When you choose any one of the above projects, we provide you the ready-made tem
 
 ## Features
 
-| Template Type/Support            | Webpack | Testing (@testing-library) | Storybook | Typescript | State Management | Lint | Build |
-|----------------------------------|---------|----------------------------|-----------|------------|------------------|------|-------|
-| React Component Library          | ✅     | ✅                        | ✅       | ✅        | No               | ✅  | ✅   |
-| React Web App                    | ✅     | ✅                        | No        | ✅        | ✅              | ✅  | ✅   |
-| React Web App with Redux         | ✅     | ✅                        | No        | ✅        | ✅              | ✅  | ✅   |
-| React Web App with Redux Toolkit | ✅     | ✅                        | No        | ✅        | ✅              | ✅  | ✅   |
-| React Web App with Context API   | ✅     | ✅                        | No        | ✅        | ✅              | ✅  | ✅   |
-
+|       Template Type/Support      | Webpack | Testing (@testing-library) | Storybook | Typescript | State Management | Lint | Build | Docker |
+|:--------------------------------:|:-------:|:--------------------------:|:---------:|:----------:|:----------------:|:----:|:-----:|--------|
+| React Component Library          | ✅       | ✅                          | ✅         | ✅          | No               | ✅    | ✅     | No     |
+| React Web App                    | ✅       | ✅                          | No        | ✅          | ✅                | ✅    | ✅     | ✅      |
+| React Web App with Redux         | ✅       | ✅                          | No        | ✅          | ✅                | ✅    | ✅     | ✅      |
+| React Web App with Redux Toolkit | ✅       | ✅                          | No        | ✅          | ✅                | ✅    | ✅     | ✅      |
+| React Web App with Context API   | ✅       | ✅                          | No        | ✅          | ✅                | ✅    | ✅     | ✅      |
 
 ## Installation 🔨	
 
@@ -68,8 +67,8 @@ After installation, create an empty directory anywhere you want and type `jatayu
      
   4. Do you want to add docker to the Template ? (if you select app template)
 
-     Yes
-     No
+      Yes
+      No
 ```
 
 Enter the directory name where you want to `setup` react app and select the `type of project` you want.
