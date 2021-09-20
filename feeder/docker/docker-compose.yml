@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  sample:
+    container_name: docker-support
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 5200:5200
+    environment:
+      - CHOKIDAR_USEPOLLING=true

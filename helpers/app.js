@@ -29,19 +29,26 @@ const questions = [
     {
       type: 'list',
       name: 'projectType',
-      message: 'Please select project type',
+      message: 'Please select template type',
       choices: projectTypes,
     },
     {
       type: 'list',
       name: 'projectSupport',
-      message: 'Please select project support ',
+      message: 'Please select template supporting language',
       choices: projectSupport,
+    },
+    {
+      type: 'list',
+      name: 'dockerSupport',
+      message: 'Do you want to add docker to the Template ?',
+      choices: ['Yes', 'No'],
+      when: (answers) => answers.projectType !== 'React Component Library'
     }
 ];
 
 module.exports = {
     getProjectDetails: () => {
-        return inquirer.prompt(questions)
+      return inquirer.prompt(questions)
     }
 }

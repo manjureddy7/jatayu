@@ -20,8 +20,8 @@ log(
 */
 const getProjectDetailsFromTheUser = async () => {
     const details = await getProjectDetails();
-    const { dirName, projectType, projectSupport } = details;
-    initiateSelectedProject(dirName, projectType, projectSupport);
+    const { dirName, projectType, projectSupport, dockerSupport } = details;
+    initiateSelectedProject(dirName, projectType, projectSupport, dockerSupport);
 }
 
 getProjectDetailsFromTheUser();
