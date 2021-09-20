@@ -3,17 +3,17 @@
 
 # JATAYU 🦅	
 
-Jatayu is a command line interface (CLI) tool which helps to generate production ready hand-made React projects for the App (web-app) or Library (components) development. 🚀	
+Jatayu is a command line interface (CLI) tool which helps to generate production ready hand-made React templates for the App (web-app) or Library (components) development. 🚀	
 
 ## What is the purpose of JATAYU ? 💁
 
-Did you ever tried setting up your own `react` environment without `create-react-app` ? Then you know the pain behind it. Adding testing support or webpack or typescript will just increases that pain. 😪	
+Did you ever tried setting up your own `react` environment without `create-react-app` ? Then you know the pain behind it. Adding `testing support | webpack | typescript | docker` will just increases that pain. 😪	
 
 `JATAYU` is that pain killer 💊. If you want to have custom template setup for your react web app or component library without the need of CRA or it's alternatives, `JATAYU` to the rescue. 🥳	
 
 We provide you the skeleton template structure and sky is the limit for it's tuning.
 
-At its very core `JATAYU` offers below described templates with both Typescript & Javascript support.
+At its very core `JATAYU` offers below described templates with both Typescript & Javascript support as template supporting languages and Docker setup (for web apps).
 
 ```
   1.React Component Library
@@ -65,11 +65,18 @@ After installation, create an empty directory anywhere you want and type `jatayu
 
      Javascript(JS)
      Typescript(TS) 
+     
+  4. Do you want to add docker to the Template ? (if you select app template)
+
+     Yes
+     No
 ```
 
 Enter the directory name where you want to `setup` react app and select the `type of project` you want.
 
 ### Steps after installing the project 	📌
+
+#### If you select Web App or Library template without Docker support:
 
 Now `cd` to the newly created folder by `jatayu` and do npm install. It's good to update your newly created `node_modules` by `npm outdated` you will get list of outdated `node_modules`, update them by `npm update`.
 
@@ -87,9 +94,15 @@ run -> npm run start (if you have chosen webapp template)
        npm run storybook (if it is library template)
 ```
 
+#### If you chose to add Docker to the App template
 
+```bash
+cd `your-newly-created-folder`
 
+dev-run -> docker compose up --build (starts dev server, please navigate to http:localhost:5200 to see your App up and rolling!)
 
+build -> docker compose -f docker-compose.prod.yml up --build (to build and run on dist folder, please navigate to http:localhost:1337 to see your App up and rolling!)
+```
   
 ## Documentation 📝	
 
@@ -102,7 +115,7 @@ Will update soon.
 
 ## Tech Stack 	🧑‍💻
 
-**Client:** React, Material UI, React-Router, Styled-Components, Storybook, Webpack
+**Client:** React, Material UI, React-Router, Styled-Components, Storybook, Webpack, Docker
 
 **Server:** Node
 
@@ -122,13 +135,25 @@ Select template type
 
 ![image](https://user-images.githubusercontent.com/22653056/133246938-0ddbc77f-0abd-4876-9d37-22a333498c96.png)
 
-Selecr template support type
+Select template supporting language type
 
-![image](https://user-images.githubusercontent.com/22653056/133247049-8fe90137-f46d-4180-adbd-6e46e9175fe8.png)
+![image](https://user-images.githubusercontent.com/22653056/133998744-c6b5dbef-d5b9-44b5-88fb-19c82b4d7a16.png)
 
-Successful project creation
+
+Need docker support?
+
+![image](https://user-images.githubusercontent.com/22653056/133998644-d3ed8942-1759-4a74-aae7-12550e0007da.png)
+
+
+Successful template creation without docker
 
 ![image](https://user-images.githubusercontent.com/22653056/133447935-46b3e6ac-41b1-4f18-85f3-3f61031e9de4.png)
+
+
+Successful template creation with docker
+
+![image](https://user-images.githubusercontent.com/22653056/133998921-b9b6f506-2826-42bd-9632-06a4867071b6.png)
+
 
 
 
