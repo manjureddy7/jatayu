@@ -1,7 +1,7 @@
 ![Logo](https://user-images.githubusercontent.com/22653056/132664833-3cf4c46c-9e41-4600-b355-53fbeedec05b.png)
 
 
-# JATAYU 🦅	
+# JATAYU 🦅	 (An ordinary tool for an ordinary developer)
 
 Jatayu is a command line interface (CLI) tool which helps to generate production ready hand-made React templates for the App (web-app) or Library (components) development. 🚀	
 
