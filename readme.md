@@ -102,6 +102,18 @@ dev-run -> docker compose up --build (starts dev server, please navigate to http
 
 build -> docker compose -f docker-compose.prod.yml up --build (to build and run on dist folder, please navigate to http:localhost:1337 to see your App up and rolling!)
 ```
+
+## What's next in the store?
+
+We have plans to make `JATAYU` library/framework independent. So that `JATAYU` can offer custom templates to Angular, Vue, Svelte etc.
+
+#### Upcoming templates:
+
+```
+  React with GraphQL
+  
+  Full stack MERN combo (MongoDB+Express+React+Node)
+```
   
 ## Documentation 📝	
 
