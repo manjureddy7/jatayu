@@ -71,7 +71,7 @@ const copyAndMove = (source, destination, dockerSupport) => {
             log(chalk.red(`${err}`));
             return;
         }
-        if(dockerSupport) {
+        if(dockerSupport === 'Yes') {
             const dockerSource = `${path.dirname(require.main.filename)}/feeder/docker`;
             addDockerSupport(dockerSource, destination);
         }
