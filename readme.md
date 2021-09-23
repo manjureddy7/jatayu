@@ -1,7 +1,7 @@
 ![Logo](https://user-images.githubusercontent.com/22653056/132664833-3cf4c46c-9e41-4600-b355-53fbeedec05b.png)
 
 
-# JATAYU 🦅	 (An ordinary tool for an ordinary developer)
+# JATAYU 🦅	 (An ordinary Tool for an ordinary Developer)
 
 Jatayu is a command line interface (CLI) tool which helps to generate production ready hand-made React templates for the App (web-app) or Library (components) development. 🚀	
 
@@ -101,6 +101,18 @@ cd `your-newly-created-folder`
 dev-run -> docker compose up --build (starts dev server, please navigate to http:localhost:5200 to see your App up and rolling!)
 
 build -> docker compose -f docker-compose.prod.yml up --build (to build and run on dist folder, please navigate to http:localhost:1337 to see your App up and rolling!)
+```
+
+## What's next in the store?
+
+We have plans to make `JATAYU` library/framework independent. So that `JATAYU` can offer custom templates to Angular, Vue, Svelte etc.
+
+#### Upcoming templates:
+
+```
+  React with GraphQL
+  
+  Full stack MERN combo (MongoDB+Express+React+Node)
 ```
   
 ## Documentation 📝	
