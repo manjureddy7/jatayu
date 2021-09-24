@@ -3,60 +3,7 @@ const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const boxen = require('boxen');
 const { log, chalk } = require('./log');
-
-
-const PROJECTS_FEEDER = [
-    {
-        projectName: 'React Component Library',
-        projectSupport: 'Javascript(JS)',
-        feederName: 'cljs'
-    },
-    {
-        projectName: 'React Component Library',
-        projectSupport: 'Typescript(TS)',
-        feederName: 'clts'
-    },
-    {
-        projectName: 'React Web App',
-        projectSupport: 'Javascript(JS)',
-        feederName: 'wajs'
-    },
-    {
-        projectName: 'React Web App',
-        projectSupport: 'Typescript(TS)',
-        feederName: 'wats'
-    },
-    {
-        projectName: 'React webapp with Redux',
-        projectSupport: 'Javascript(JS)',
-        feederName: 'wajs-redux'
-    },
-    {
-        projectName: 'React Web App with Redux',
-        projectSupport: 'Typescript(TS)',
-        feederName: 'wats-redux'
-    },
-    {
-        projectName: 'React Web App with Redux Toolkit',
-        projectSupport: 'Javascript(JS)',
-        feederName: 'wajs-redux-toolkit'
-    },
-    {
-        projectName: 'React Web App with Redux Toolkit',
-        projectSupport: 'Typescript(TS)',
-        feederName: 'wats-redux-toolkit'
-    },
-    {
-        projectName: 'React Web App with Context',
-        projectSupport: 'Javascript(JS)',
-        feederName: 'wajs-context'
-    },
-    {
-        projectName: 'React Web App with Context',
-        projectSupport: 'Typescript(TS)',
-        feederName: 'wats-context'
-    }
-];
+const { PROJECTS_FEEDER } = require('./constants');
 
 /**
  * Copy the corresponding project type from feeder and publish to the user directory
@@ -107,9 +54,9 @@ const addDockerSupport = (dockerSource, templateDestination) => {
             return;
         }
         const m1 = chalk.greenBright.bold(`Docker support added to the template successfull`);
-        const m2 = chalk.greenBright.bold(`Run docker dev by docker-compose up -d --build`);
+        const m2 = chalk.greenBright.bold(`Run docker dev by docker compose up -d --build`);
         const m3 = chalk.greenBright.bold(`Open localhost:5200 in your browser after running above command`);
-        const m4 = chalk.greenBright.bold(`Run docker prod by docker-compose -f docker-compose.prod.yml up -d --build`);
+        const m4 = chalk.greenBright.bold(`Run docker prod by docker-compose -f docker compose.prod.yml up -d --build`);
         const m5 = chalk.greenBright.bold(`Open localhost:1337 in your browser after running above command`);
         const display = `${m1}\n \n ${m2}\n \n ${m3}\n \n ${m4}\n \n ${m5}\n \n`;
         const boxenOptions = {

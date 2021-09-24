@@ -117,7 +117,7 @@ We have plans to make `JATAYU` library/framework independent. So that `JATAYU` c
   
 ## Documentation 📝	
 
-Will update soon.
+Please find the [dev.to](https://dev.to/manureddy94/introducing-jatayu-3no) and [medium](https://medium.com/@manureddy.g94/jatayu-4ca69463686e) links for Jatayu in live action.
 
   
 ## Authors 👨‍🚀

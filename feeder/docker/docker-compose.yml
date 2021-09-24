@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   sample:
-    container_name: docker-support
+    container_name: docker-builder
     build:
       context: .
       dockerfile: Dockerfile

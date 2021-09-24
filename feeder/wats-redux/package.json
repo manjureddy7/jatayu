@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack/webpack.dev --open --port 5203",
+    "start": "webpack-dev-server --config config/webpack/webpack.dev --open --port 5200",
     "build": "webpack --config config/webpack/webpack.prod",
     "test": "jest --watchAll"
   },
@@ -29,7 +29,7 @@
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser":"^7.15.7",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^6.2.0",

@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   wajs-docker-prod:
-    container_name: docker-prod-support
+    container_name: docker-prod-builder
     build:
       context: .
       dockerfile: Dockerfile.prod
