@@ -113,6 +113,8 @@ We have plans to make `JATAYU` library/framework independent. So that `JATAYU` c
   React with GraphQL
   
   Full stack MERN combo (MongoDB+Express+React+Node)
+
+  Basic Node Typescript app
 ```
   
 ## Documentation 📝	
